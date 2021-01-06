@@ -10,6 +10,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "lodash": "^4.17.20",
     "webpack": "^5.11.1",
     "webpack-cli": "^4.3.1"
   }
