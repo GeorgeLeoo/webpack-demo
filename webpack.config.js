@@ -11,7 +11,10 @@ module.exports = {
   },
   devtool: 'inline-source-map',
   plugins: [
-    new CleanWebpackPlugin(),
+    // 如果不想在 watch 触发增量构建后删除 index.html 文件，
+    // 可以在 CleanWebpackPlugin 中配置 
+    // cleanStaleWebpackAssets 选项来实现
+    new CleanWebpackPlugin({ cleanStaleWebpackAssets: false }),
     new HtmlWebpackPlugin({
       title: "Development"
     })
