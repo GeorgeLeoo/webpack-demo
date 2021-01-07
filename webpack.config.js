@@ -3,6 +3,8 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 module.exports = {
+  // 将 mode 设置为 'development'
+  mode: 'development',
   entry: {
     index:'./src/index.js',
     print:'./src/print.js',
@@ -10,7 +12,7 @@ module.exports = {
   plugins: [
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
-      title: "管理输出"
+      title: "Development"
     })
   ],
   output: {
