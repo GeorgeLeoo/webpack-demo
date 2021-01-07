@@ -18,6 +18,7 @@ module.exports = {
 		path: path.resolve(__dirname, 'dist'),
 	},
 	optimization: {
+    moduleIds: 'deterministic',
 		runtimeChunk: 'single',
 		splitChunks: {
 			cacheGroups: {

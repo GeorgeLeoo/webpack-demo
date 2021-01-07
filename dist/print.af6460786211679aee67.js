@@ -1,1 +1,0 @@
-(self.webpackChunkwebpack_demo=self.webpackChunkwebpack_demo||[]).push([[740],{569:(e,c,o)=>{"use strict";function s(){console.log("I get called from print.js!")}o.d(c,{Z:()=>s})}},0,[[569,666]]]);
