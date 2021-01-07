@@ -8,7 +8,19 @@
  */
 /******/ (() => { // webpackBootstrap
 /******/ 	"use strict";
-/******/ 	var __webpack_modules__ = ({});
+/******/ 	var __webpack_modules__ = ({
+
+/***/ "./src/another-module.js":
+/*!*******************************!*\
+  !*** ./src/another-module.js ***!
+  \*******************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! lodash */ \"./node_modules/_lodash@4.17.20@lodash/lodash.js\");\n/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(lodash__WEBPACK_IMPORTED_MODULE_0__);\n\n\nconsole.log(lodash__WEBPACK_IMPORTED_MODULE_0___default().join(['Another', 'module', 'loaded!'], ' '));\n\n//# sourceURL=webpack://webpack-demo/./src/another-module.js?");
+
+/***/ })
+
+/******/ 	});
 /************************************************************************/
 /******/ 	// The module cache
 /******/ 	var __webpack_module_cache__ = {};
@@ -112,11 +124,11 @@
 /******/ 		// undefined = chunk not loaded, null = chunk preloaded/prefetched
 /******/ 		// Promise = chunk loading, 0 = chunk loaded
 /******/ 		var installedChunks = {
-/******/ 			"runtime": 0
+/******/ 			"another": 0
 /******/ 		};
 /******/ 		
 /******/ 		var deferredModules = [
-/******/ 		
+/******/ 			["./src/another-module.js","vendors-node_modules__lodash_4_17_20_lodash_lodash_js"]
 /******/ 		];
 /******/ 		// no chunk on demand loading
 /******/ 		
