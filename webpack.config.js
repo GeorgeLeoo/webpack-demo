@@ -39,6 +39,11 @@ module.exports = {
   ],
   output: {
     filename: '[name].bundle.js',
-    path: path.resolve(__dirname, 'dist')
+    path: path.resolve(__dirname, 'dist'),
+    // 我们将会在 server 脚本使用 publicPath，
+    // 以确保文件资源能够正确地 serve 
+    // 在 http://localhost:3000 下，
+    // 稍后我们会指定 port number(端口号)
+    publicPath: '/',
   }
 }
